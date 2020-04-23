@@ -29,9 +29,7 @@ mount /dev/disk/by-label/BOOT /mnt/boot
 
 swapon /dev/nvme0n1p2
 nixos-generate-config --root /mnt
-nano /mnt/etc/nixos/configuration.nix
 
-# Uncomment the following lines
-networking.hostName = "nixos";
-networking.wireless.enable = true;
+# Edit the config as needed
+# nano /mnt/etc/nixos/configuration.nix
 
